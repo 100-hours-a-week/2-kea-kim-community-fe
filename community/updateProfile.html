@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="kr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="css/updateProfile.css">
+        <title>회원정보 수정</title>
+    </head>
+    <body>
+        <header>
+            <article>
+                <h1 class="headertitle">아무 말 대잔치</h1>
+            </article>
+            <img class="myProfile" src="/images/profile_img.webp">
+        </header>
+        <section class="wrap">
+            <article>
+                <h1 class="title">회원정보 수정</h1>
+            </article>
+            <article>
+                <div class="profileBox">
+                    <label for="id">프로필 사진</label>
+                    <div class="imageBox">
+                        <input type="file" accept="image/*" name="profile" id="profile"/>
+                    </div>
+                </div>                
+            </article>
+            <article>
+                <div class="inputBox">
+                    <label for="id">이메일</label>
+                    <a>startupcode@gmail.com</a>
+                </div>
+                <div class="inputBox">
+                    <label for="inckname">닉네임</label>
+                    <input type="password" name="pw" id="pw" placeholder="스타트업 코드"/>
+                    <p class="helperText">*helperText</p>
+                </div>
+            
+            </article>
+            <article>
+                <div class="buttons">
+                    <button id="update">수정하기</button>
+                    <a href="login.html">회원 탈퇴</a>
+                    <button class="finish" id="finish">수정 완료</div>
+                </div>
+            </article>
+        </section>
+    </body>
+</html>

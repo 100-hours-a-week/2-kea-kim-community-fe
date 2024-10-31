@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="kr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="css/postList.css">
+        <title>게시판 목록</title>
+    </head>
+    <body>
+        <header>
+            <article>
+                <h1 class="headertitle">아무 말 대잔치</h1>
+            </article>
+            <img class="myProfile" src="/images/profile_img.webp" alt="Back" onclick="history.back()">
+        </header>
+        <section class="wrap">
+            <article>
+                <a class="title">안녕하세요, <br> 아무 말 대잔치 게시판 입니다.</a>
+            </article>
+            <article>
+                <div class="buttons">
+                    <button class="makePost" onclick="location.href='createPost.html'">게시글 작성</button>
+                </div>
+            </article>
+            <article>
+            <article class="post-container" onclick="location.href='postDetail.html'">
+                <div class="singlePost">
+                    <div class="post-title">
+                        <strong>제목 1</strong>
+                    </div>
+                    <div class="post-header">
+                        <span class="post-meta">좋아요 0  댓글 0  조회수 0</span>
+                        <span class="post-date">2021-01-01 00:00:00</span>
+                    </div>
+                    <div class="post-author">
+                        <img class="writerProfile" src="/images/profile_img.webp" alt="Author">
+                        <span>더미 작성자1</span>
+                    </div>
+                </div>
+            </article>    
+            </article>
+        </section>
+    </body>
+</html>

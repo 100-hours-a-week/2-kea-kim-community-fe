@@ -1,0 +1,180 @@
+@import url('/css/header.css');
+
+
+/* 레이아웃 */
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+/* 페이지 설정 */
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+body h1 {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.wrap {
+    width: 100%;
+    max-width: 592px;
+    background-color: #fff;
+    padding-top: 150px;
+    padding-bottom: 200px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+/* 디자인 */
+.title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38.19px;
+    color: #000000;
+    margin-bottom: 60px;
+}
+
+article {
+    width: 100%;
+    max-width: 592px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+}
+
+
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    max-width: 592px;
+    width: 100%;
+    position: relative;
+
+    border-bottom: 1px solid #e0e0e0;
+
+
+}
+
+.inputBox label {
+    font-size: 15px;
+    line-height: 17.9px;
+    font-weight: 700;
+    color: #000000;
+
+    border-bottom: 1px solid #e0e0e0;
+
+}
+
+.inputBox input {
+    font-size: 14px;
+    color: #000000;
+    line-height: 16.71px;
+
+    max-width: 355px;
+
+    width: 100%;
+    padding: 8px 10px;
+
+    border: 1px none #000000;
+    border-radius: 4px;
+
+    background-color: transparent;
+}
+
+.inputBox textarea {
+    font-size: 14px;
+    color: #000000;
+    line-height: 16.71px;
+
+    max-width: 355px;
+    width: 100%;
+    height: 200px; /* 원하는 높이 값 */
+    padding: 8px 10px;
+
+    border: 1px none #000000;
+    border-radius: 4px;
+
+    background-color: transparent;
+    resize: none; /* 사용자가 크기를 조정할 수 없게 설정 */
+}
+
+
+.inputBox > .helperText {
+    position: absolute;
+    bottom: -4px;
+    transform: translate(0, 100%);
+
+    height: 15px;
+    width: 71px;
+
+    color: #f00;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.buttons {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 355px;
+    margin-top: 42px;
+    justify-content: center;
+}
+ 
+.buttons button,
+a {
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.buttons button {
+    background-color: #aca0eb;
+    border-radius: 4px;
+    border: none;
+
+    color: #ffffff;
+    font-weight: 700;
+
+    justify-content: center;
+
+}
+
+.buttons a {
+    color: #000000;
+    font-weight: 400;
+    text-decoration-line: none;
+    font-size: 14px;
+    line-height: 16.71px;
+}
+
+
+
