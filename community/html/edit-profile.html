@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="kr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/modal.css">
+        <link rel="stylesheet" type="text/css" href="/css/header.css">
+        <link rel="stylesheet" type="text/css" href="/css/edit-profile.css">
+        <title>회원정보 수정</title>
+    </head>
+    <body>
+        <header>
+            <article>
+                <h1 class="headertitle">아무 말 대잔치</h1>
+            </article>
+            <div class="profile-dropdown">
+                <img id="myProfile" class="myProfile" src="/images/profile_img.webp" alt="myProfile">
+                <div class="dropdown-content" id="dropdownMenu">
+                    <a href="/html/edit-profile.html">프로필수정</a>
+                    <a href="/html/edit-password.html">비밀번호수정</a>
+                    <a href="#" id="logoutButton">로그아웃</a>                
+                </div>
+            </div>
+        </header>
+        <section class="wrap">
+            <article>
+                <h1 class="title">회원정보 수정</h1>
+            </article>
+            <article>
+                <div class="profileBox">
+                    <label for="id">프로필 사진*</label>
+                    <div class="imageBox">
+                        <img src="/images/profile_img.webp" alt="프로필 사진" class="profile-image" id="previewImage">
+                        <button id="changeProfile" class="change-btn">변경</button>
+                        <input type="file" accept="image/*" name="profile" id="profile" style="display: none;">
+                    </div>
+                </div>                
+            </article>
+            <article>
+                <div class="inputBox">
+                    <label for="id">이메일</label>
+                    <a id="email">-</a>
+                </div>
+                <div class="inputBox">
+                    <label for="inckname">닉네임</label>
+                    <input type="text" name="nickname" id="nickname" placeholder="스타트업 코드"/>
+                    <p class="helperText" id="nicknameHelperText"></p>
+                </div>
+            
+            </article>
+            <article>
+                <div class="buttons">
+                    <button id="update">수정하기</button>
+                    <button id="deleteAccount">회원 탈퇴</button>
+                    <button class="finish" id="finish">수정 완료</div>
+                </div>
+            </article>
+        </section>
+        <script src="/js/config.js"></script>
+        <script src="/js/modal.js"></script>
+        <script src="/js/edit-profile.js" defer></script>
+    </body>
+</html>
