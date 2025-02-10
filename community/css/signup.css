@@ -1,6 +1,3 @@
-@import url('/css/header.css');
-
-
 /* 레이아웃 */
 
 * {
@@ -15,7 +12,7 @@
 body {
     display: flex;
     justify-content: center;
-    background-color: #fff;
+    background-color: #f4f5f7;
     font-family: "Noto Sans KR", sans-serif;
 }
 
@@ -30,7 +27,7 @@ body h1 {
 .wrap {
     width: 100%;
     max-width: 392px;
-    background-color: #fff;
+    background-color: #f4f5f7;
     padding-top: 200px;
     padding-bottom: 200px;
     align-items: center;
@@ -72,7 +69,7 @@ article {
     padding-bottom: 10px;
 }
 
-.imageBox {
+/* .imageBox {
     display: flex;
     flex-direction: column;
     row-gap: 8px;
@@ -81,6 +78,29 @@ article {
     position: relative;
     height: 159px;
     align-items: center;
+} */
+
+.profileImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imageBox {
+    width: 149px;
+    height: 149px;
+    background-color: #c4c4c4; /* 원의 색상 */
+    border-radius: 50%; /* 원형으로 만들기 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* 클릭 가능하게 설정 */
+    background-size: cover;
+    background-position: center;
+}
+
+.profileIcon img {
+    width: 24px; /* 아이콘 크기 */
+    height: 24px;
 }
 
 .profileBox label {
@@ -94,16 +114,17 @@ article {
     position: absolute;
     transform: translate(0, 100%);
 
-    height: 15px;
-    width: 71px;
-
     top: 5px;
-
-    color: #f00;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+/* helperText 에러 메시지 스타일 */
+.profileBox .helperText {
+    display: none; /* 기본적으로는 숨김 */
+    color: #f00;
 }
 
 .profileBox input {
@@ -133,6 +154,7 @@ article {
     max-width: 355px;
     width: 100%;
     position: relative;
+    margin-bottom: 10px;
 }
 
 .inputBox label {
@@ -155,19 +177,20 @@ article {
     border: 1px solid #000000;
     border-radius: 4px;
 
-    background-color: transparent;
+    background-color: #f4f5f7;
 }
 
+/* helperText 에러 메시지 스타일 */
+.inputBox .helperText {
+    display: none; /* 기본적으로는 숨김 */
+    color: #f00;
+}
 
 .inputBox > .helperText {
     position: absolute;
     bottom: -4px;
     transform: translate(0, 100%);
 
-    height: 15px;
-    width: 71px;
-
-    color: #f00;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -202,10 +225,16 @@ a {
 
     color: #ffffff;
     font-weight: 700;
+    cursor: not-allowed;
 
     justify-content: center;
-
 }
+/* 활성화된 버튼 */
+.buttons button.active {
+    background-color: #7F6AEE;
+    cursor: pointer;
+}
+
 
 .buttons a {
     color: #000000;
