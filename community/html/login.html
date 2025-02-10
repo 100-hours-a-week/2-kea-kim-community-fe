@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" type="text/css" href="css/login.css">
+        <link rel="stylesheet" type="text/css" href="/css/login.css">
+        <link rel="stylesheet" type="text/css" href="/css/header.css">
         <title>로그인</title>
     </head>
     <body>
@@ -23,15 +24,18 @@
                 <div class="inputBox">
                     <label for="pw">비밀번호</label>
                     <input type="password" name="pw" id="pw" placeholder="비밀번호를 입력하세요"/>
-                    <p class="helperText">*helperText</p>
+                    <p class="helperText" id="helperText"></p>
                 </div>
             </article>
             <article>
                 <div class="buttons">
-                    <button id="login"><a href="postList.html">로그인</a></button>
-                    <a href="signup.html">회원가입</a>
+                    <button type="button" id="login" disabled>로그인</button>
+                    <a href="/html/signup.html">회원가입</a>
                 </div>
             </article>
         </section>
+    <!-- JavaScript 코드 -->
+        <script src="/js/config.js"></script>
+        <script src="/js/login.js" defer></script>
     </body>
 </html>

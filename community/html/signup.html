@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="kr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="/css/signup.css">
+        <link rel="stylesheet" type="text/css" href="/css/header.css">
+
+        <title>회원가입</title>
+    </head>
+    <body>
+        <header>
+            <img class="back" src="/images/icon/back.png" alt="Back" onclick="history.back()">
+            <article>
+                <h1 class="headertitle">아무 말 대잔치</h1>
+            </article>
+        </header>
+        <section class="wrap">
+            <article>
+                <h1 class="title">회원가입</h1>
+            </article>
+            <article>
+                <div class="profileBox">
+                    <label for="profile">프로필 사진</label>
+                    <p class="helperText" id="profileHelper">*프로필 사진을 추가해주세요.</p>
+                    <div class="profileImage">
+                        <div class="imageBox" onclick="document.getElementById('profile').click();">
+                            <input type="file" accept="image/*" name="profile" id="profile" style="display: none;" />
+                            <span class="profileIcon">
+                                <img src="/images/icon/plus.png" alt="프로필 아이콘">
+                            </span>
+                        </div>
+                    </div>
+                </div>                               
+            </article>
+            <article>
+                <div class="inputBox">
+                    <label for="id">이메일 *</label>
+                    <input type="text" name="id" id="id" placeholder="이메일을 입력하세요"/>
+                    <p class="helperText" id="emailHelper"></p>
+                </div>
+                <div class="inputBox">
+                    <label for="password">비밀번호 *</label>
+                    <input type="password" name="password" id="password" placeholder="비밀번호를 입력하세요"/>
+                    <p class="helperText" id="passwordHelper"></p>
+                </div>
+                <div class="inputBox">
+                    <label for="pwCheck">비밀번호 확인 *</label>
+                    <input type="password" name="pwCheck" id="pwCheck" placeholder="비밀번호를 입력하세요"/>
+                    <p class="helperText" id="checkPasswordHelper"></p>
+                </div>
+                <div class="inputBox">
+                    <label for="nickname">닉네임 *</label>
+                    <input type="text" name="nickname" id="nickname" placeholder="닉네임을 입력하세요"/>
+                    <p class="helperText" id="nicknameHelper"></p>
+                </div>
+            </article>
+            <article>
+                <div class="buttons">
+                    <button id="signupButton" disabled>회원가입</button>
+                    <a href="/html/login.html">로그인하러 가기</a>
+                </div>
+            </article>
+        </section>
+        <script src="/js/config.js"></script>
+        <script src="/js/signup.js" defer></script>
+    </body>
+</html>

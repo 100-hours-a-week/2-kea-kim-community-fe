@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <link rel="stylesheet" type="text/css" href="css/createPost.css">
+        <link rel="stylesheet" type="text/css" href="/css/header.css">
+        <link rel="stylesheet" type="text/css" href="/css/edit-post.css">
         <title>게시글 수정</title>
     </head>
     <body>
@@ -21,24 +21,27 @@
             </article>
             <article>
                 <div class="inputBox">
-                    <label for="id">제목 *</label>
-                    <input type="text" name="title" id="title" value="제목1"/>
+                    <label for="title">제목 *</label>
+                    <input type="text" name="title" id="title" placeholder="제목을 입력하세요" maxlength="26" />
                 </div>
                 <div class="inputBox">
-                    <label for="pw">내용 *</label>
-                    <textarea type="text" name="content" id="content">이것은 원래 있던 게시물의 내용입니다.</textarea>
-                    <p class="helperText">*helperText</p>
+                    <label for="content">내용 *</label>
+                    <textarea name="content" id="content" placeholder="내용을 입력하세요"></textarea>
+                    <p class="helperText" id="contentHelperText"></p>
                 </div>
                 <div class="inputBox">
-                    <label for="id">이미지</label>
-                    <input type="file" accept="image/*" name="profile" id="profile"/>
+                    <label for="profile">이미지</label>
+                    <input type="file" accept="image/*" name="profile" id="profile" />
                 </div>
             </article>
             <article>
                 <div class="buttons">
-                    <button id="login">수정하기</button>
+                    <button id="update">수정하기</button>
                 </div>
             </article>
         </section>
+        <script src="/js/config.js"></script>
+        <script src="/js/edit-post.js" defer></script>
+
     </body>
 </html>

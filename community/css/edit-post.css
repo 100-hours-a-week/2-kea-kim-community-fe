@@ -1,6 +1,3 @@
-@import url('/css/header.css');
-
-
 /* 레이아웃 */
 
 * {
@@ -90,7 +87,7 @@ article {
     color: #000000;
     line-height: 16.71px;
 
-    max-width: 355px;
+    max-width: 592px;
 
     width: 100%;
     padding: 8px 10px;
@@ -106,7 +103,7 @@ article {
     color: #000000;
     line-height: 16.71px;
 
-    max-width: 355px;
+    max-width: 592px;
     width: 100%;
     height: 200px; /* 원하는 높이 값 */
     padding: 8px 10px;
@@ -123,10 +120,6 @@ article {
     position: absolute;
     bottom: -4px;
     transform: translate(0, 100%);
-
-    height: 15px;
-    width: 71px;
-
     color: #f00;
     font-size: 12px;
     font-style: normal;

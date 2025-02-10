@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="kr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/css/header.css">
+        <link rel="stylesheet" type="text/css" href="/css/posts.css">
+        <title>게시글 목록</title>
+    </head>
+    <body>
+        <header>
+            <article>
+                <h1 class="headertitle">아무 말 대잔치</h1>
+            </article>
+            <div class="profile-dropdown">
+                <img id="myProfile" class="myProfile" src="/images/profile_img.webp" alt="myProfile">
+                <div class="dropdown-content" id="dropdownMenu">
+                    <a href="/html/edit-profile.html">프로필수정</a>
+                    <a href="/html/edit-password.html">비밀번호수정</a>
+                    <a href="#" id="logoutButton">로그아웃</a>                
+                </div>
+            </div>
+        </header>
+        <section class="wrap">
+            <article>
+                <div class="title">안녕하세요, <br> 아무 말 대잔치 <span class="bold">게시판</span> 입니다.</div>
+            </article>
+            <article>
+                <div class="buttons">
+                    <button class="makePost" onclick="location.href='/html/make-post.html'">게시글 작성</button>
+                </div>
+            </article>
+            <article>
+            <article id="post-container" class="post-container">
+                
+            </article>    
+            </article>
+        </section>
+        <script src="/js/config.js"></script>
+        <script src="/js/posts.js" defer></script>
+    </body>
+</html>
